@@ -13,6 +13,7 @@
 
   --clr-light: #fff;
   --clr-dark: #303030;
+  --clr-grey: #888888;
   --clr-accent: #1fe9bd;
 
   --fs-h1: 3rem;
@@ -51,7 +52,7 @@ body {
 
 section {
   padding: 5em 2em;
-  max-width: 1080px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -66,7 +67,7 @@ strong {
 
 .line {
   margin: 0 auto;
-  max-width: 1080px;
+  max-width: 1280px;
   border-bottom: 1px solid var(--clr-dark);
 }
 
@@ -377,7 +378,7 @@ header {
 
 footer {
   padding: 5em 2em;
-  max-width: 1080px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -396,4 +397,53 @@ footer {
 .footer__link:hover {
   transform: translateY(-8px);
   transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+}
+
+.footer__text {
+  color: var(--clr-grey);
+}
+
+
+
+/* Portfolio */
+
+.portfolio-intro {
+
+}
+
+.portfolio__title {
+  width: 50%;
+  margin-bottom: 0.5em;
+  color: var(--clr-accent);
+}
+
+.portfolio__keyword {
+  color: var(--clr-grey);
+}
+
+.portfolio__subtitle {
+  margin-top: 0.5em;
+}
+
+.portfolio-detail {
+  display: flex;
+}
+
+.portfolio-detail__item {
+  margin-right: 2em;
+}
+
+.portfolio-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-title {
+  margin-bottom: 1em;
+}
+
+.youtube-video {
+  margin: 1em auto;
+  width: 100%;
+  height: 400px;
 }
