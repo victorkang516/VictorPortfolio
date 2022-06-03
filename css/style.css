@@ -15,6 +15,7 @@
   --clr-dark: #303030;
   --clr-grey: #888888;
   --clr-accent: #1fe9bd;
+  --clr-accent-2: #16b19c;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -52,7 +53,7 @@ body {
 
 section {
   padding: 5em 2em;
-  max-width: 1280px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -283,6 +284,7 @@ header {
 
 .intro {
   position: relative;
+  margin-top: 4em;
 }
 
 .intro__img {
@@ -296,11 +298,11 @@ header {
 
 .social-list {
   list-style: none;
-  margin-top: 2em;
+  margin-top: 5em;
 }
 
 .social-list__item {
-  margin: 0.5em 0em;
+  margin: 1em 0em;
 }
 
 .social-list__link {
@@ -311,8 +313,7 @@ header {
 }
 
 .social-list__link:hover {
-  transform: translateY(-5px);
-  transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+  color: var(--clr-accent);
 }
 
 .social-list__link i {
@@ -326,8 +327,8 @@ header {
   }
 
   .intro__img {
-    width: 35%;
-    height: 35%;
+    width: 30%;
+    height: 30%;
   }
 
   .section__subtitle--intro {
@@ -407,6 +408,36 @@ footer {
 
 /* Portfolio */
 
+.underline {
+  height: 5px;
+  width: 80%;
+  background-color: var(--clr-accent);
+  margin: 1em auto;
+}
+
+.portfolio__image {
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+
+
+/* Portfolio intro */
+
+.portfolio__link {
+  display: flex;
+  justify-content: start;
+  gap: 1em;
+}
+
+.portfollio__button {
+  text-decoration: none;
+  background-color: var(--clr-accent);
+  color: var(--clr-dark);
+  padding: 1em 1em;
+  border-radius: 10px;
+}
+
 .portfolio-intro {
 
 }
@@ -427,19 +458,31 @@ footer {
 
 .portfolio-detail {
   display: flex;
+  margin-top: 2em;
+  justify-content: center;
+  text-align: center;
 }
 
 .portfolio-detail__item {
   margin-right: 2em;
 }
 
-.portfolio-content {
-  display: flex;
-  flex-direction: column;
+
+/* content */
+.portfolio__content {
+  margin-top: 4em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+  text-align: center;
 }
 
 .content-title {
   margin-bottom: 1em;
+  text-align: center;
+}
+
+.content__item {
 }
 
 .youtube-video {
@@ -447,3 +490,4 @@ footer {
   width: 100%;
   height: 400px;
 }
+
