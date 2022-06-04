@@ -24,6 +24,7 @@
         <ul class="nav__list">
           <li class="nav__item"><a href="#about-me" class="nav__link">About me</a></li>
           <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+          <li class="nav__item"><a href="#contact-me" class="nav__link">Contact Me</a></li>
         </ul>
       </nav>
     </header>
@@ -32,14 +33,14 @@
     <!-- Introduction -->
     <section class="intro" id="about-me">
 
-      <div class="intro__info">
+      <div class="intro__left">
         <h1 class="section__title section__title--intro">
           <strong>Victor Kang </strong>
         </h1>
         <p class="section__subtitle section__subtitle--intro">Software Engineering Multimedia Student</p>
-        <p class="section__paragraph section__paragraph--intro">Hi, I am in my third year at The National University of Malaysia (UKM) studying Software Engineering Multimedia. .</p>
+        <p class="section__paragraph section__paragraph--intro">Hi, I am in my third year at National University of Malaysia (UKM) studying Bachelor Degree of Software Engineering Multimedia.</p>
         
-        <p>Currently looking for internship opportunity to gain experience:</p>
+        <p>Currently looking for internship opportunity:</p>
         <ul>
           <li>
             <p>Start Date: 1 September 2022 (Earliest date is 8 August 2022)</p>
@@ -48,48 +49,15 @@
             <p>End Date: 19 January 2023 (20weeks)</p>
           </li>
         </ul>
-        
 
-        <ul class="social-list">
-          <li class="social-list__item">
-            <a class="social-list__link" href="https://github.com/victorkang516">
-              <i class="fa-brands fa-github"></i>
-              github.com/victorkang516
-            </a>
-          </li>
+        <p>Download my resume <a href="/resume/VictorKangKaiSheng_Resume.pdf">here.</a></p>
 
-          <li class="social-list__item">
-            <a class="social-list__link" href="https://www.linkedin.com/in/victor-kang-971823236/">
-              <i class="fa-brands fa-linkedin"></i>
-              linkedin.com/in/victor-kang-971823236/
-            </a>
-          </li>
-
-          <li class="social-list__item">
-            <a class="social-list__link">
-              <i class="fa-solid fa-envelope"></i>
-              victorkang516@gmail.com
-            </a>
-          </li>
-
-          <li class="social-list__item">
-            <a class="social-list__link">
-              <i class="fa-solid fa-phone"></i>
-              010-8699011
-            </a>
-          </li>
-
-          <li class="social-list__item">
-            <a class="social-list__link">
-              <i class="fa-solid fa-location-dot"></i>
-              Bidor, Perak, Malaysia.
-            </a>
-          </li>
-
-        </ul>
       </div>
       
-      <img src="img/Victor.png" alt="a picture of Victor Kang" class="intro__img">
+      <div class="intro__right">
+        <img src="img/Victor.png" alt="a picture of Victor Kang" class="intro__img">
+      </div>
+      
 
     </section>
 
@@ -103,8 +71,9 @@
       <p class="section__subtitle section__subtitle--work">Some of my software development and design works.</p>
 
       <div class="portfolio">
+
         <!-- Portfolio item -->
-        <div href="#" class="portfolio__item">
+        <div class="portfolio__item">
           <a href="portfolios/idar.html">
             <img src="img/FYP_IDAR.png" alt="" class="portfolio__img">
           </a>
@@ -118,7 +87,7 @@
         </div>
 
         <!-- Portfolio item -->
-        <div href="#" class="portfolio__item">
+        <div class="portfolio__item">
           <a href="portfolios/uwushoppingsite.html">
             <img src="img/uwushoppingsite_thumbnail.png" alt="" class="portfolio__img">
           </a>
@@ -132,12 +101,26 @@
         </div>
 
         <!-- Portfolio item -->
-        <div href="#" class="portfolio__item">
-          <a href="#">
+        <div class="portfolio__item">
+          <a href="portfolios/easyreport.html">
+            <img src="img/easyreport/easyreport_thumbnail.png" alt="" class="portfolio__img">
+          </a>
+          <p class="portfolio__date">Sep 2021 - Feb 2022</p>
+          <a href="portfolios/easyreport.html" class="portfolio__item--title">
+            <h3>EasyReport</h3>
+          </a>
+          <p>Learned to built a prototype with design thinking approach. This mobile app, EasyReport is designed for citizens to make report on maintenance of roads, highways, buildings or structures. The prototype of this app is develop using Flutter&Dart.</p>
+
+          <div class="line"></div>
+        </div>
+
+        <!-- Portfolio item -->
+        <div class="portfolio__item">
+          <a href="portfolios/tionghua.html">
             <img src="img/tiong_hua_kpz_thumbnail.png" alt="" class="portfolio__img">
           </a>
           <p class="portfolio__date">Sep 2019 - May 2021</p>
-          <a href="#" class="portfolio__item--title">
+          <a href="portfolios/tionghua.html" class="portfolio__item--title">
             <h3>Cultural Night Event - Tiong Hua KPZ Club</h3>
           </a>
           
@@ -147,12 +130,12 @@
         </div>
 
         <!-- Portfolio item -->
-        <div href="#" class="portfolio__item">
-          <a href="#">
+        <div class="portfolio__item">
+          <a href="portfolios/duoagency.html">
             <img src="img/duoagency_thumbnail.png" alt="" class="portfolio__img">
           </a>
           <p class="portfolio__date">Dec 2021</p>
-          <a href="#" class="portfolio__item--title">
+          <a href="portfolios/duoagency.html" class="portfolio__item--title">
             <h3>Duo Agency</h3>
           </a>
           
@@ -169,8 +152,50 @@
 
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="contact-me">
+
+      <h2 class="section__title section__title--footer" >Contact Me</h2>
+
+      <div class="social-list">
+
+        <a class="social-list__link" href="https://github.com/victorkang516">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a class="social-list__link" href="https://www.linkedin.com/in/victor-kang-971823236/">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+      </div>
+
+      <ul class="contact-list">
+
+        <li class="contact-list__item">
+          <div class="contact-list__info">
+            <i class="fa-solid fa-envelope"></i>
+            victorkang516@gmail.com
+          </div>
+        </li>
+
+        <li class="contact-list__item">
+          <div class="contact-list__info">
+            <i class="fa-solid fa-phone"></i>
+            010-8699011
+          </div>
+        </li>
+  
+        <li class="contact-list__item">
+          <div class="contact-list__info">
+            <i class="fa-solid fa-location-dot"></i>
+            Bidor, Perak, Malaysia.
+          </div>
+        </li>
+
+      </ul>
+
+
       <a class="footer__link" href="#">Back To Top</a>
+
     </footer>
 
 
