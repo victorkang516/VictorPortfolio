@@ -22,7 +22,7 @@ const AcademicProject = () => {
         />
 
         <PortfolioItem
-          link='portfolios/plaguedoctor.html'
+          link='/plaguedoctor'
           image_path="img/plaguedoctorthumbnail.png"
           date='May 2022 - July 2022'
           title='Plague Doctor'
@@ -30,7 +30,7 @@ const AcademicProject = () => {
         />
 
         <PortfolioItem
-          link='portfolios/uwushoppingsite.html'
+          link='/uwu'
           image_path="img/uwushoppingsite_thumbnail.png"
           date='Sep 2020 - Feb 2022'
           title='UWU Shopping Site'
@@ -38,7 +38,7 @@ const AcademicProject = () => {
         />
 
         <PortfolioItem
-          link='portfolios/easyreport.html'
+          link='/easy'
           image_path="img/easyreport/easyreport_thumbnail.png"
           date='Sep 2021 - Feb 2022'
           title='EasyReport'

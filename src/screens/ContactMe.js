@@ -7,7 +7,7 @@ const ContactMe = () => {
     const { ref: ref, inView: refIsVisible } = useInView();
 
     return (
-        <footer id="contact-me" className={`footer ${refIsVisible ? 'fadeIn' : ''}`} ref={ref}>
+        <div id="contact-me" className={`contact-me ${refIsVisible ? 'fadeIn' : ''}`} ref={ref}>
             <h1>Contact Me</h1>
 
             <div className='social-list'>
@@ -47,7 +47,7 @@ const ContactMe = () => {
 
             </ul>
 
-        </footer>
+        </div>
     )
 }
 

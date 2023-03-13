@@ -1,33 +1,18 @@
 import React, { useEffect, useRef } from 'react';
 import './Idar.css';
-import Header from '../Header';
+import Iframe from 'react-iframe'
+import ContactMe from '../ContactMe';
+
 const Idar = () => {
-    const bgRef = useRef(null);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollPos = window.scrollY;
-            const bgElement = bgRef.current;
-            if (bgElement) {
-                bgElement.style.top = `${scrollPos * 0.6}px`;
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
     return (
-        <div className='idar'>
+        <div className='pf'>
 
             <h1 className="portfolio__title">Interior Design AR Room</h1>
 
             <section className="portfolio-intro" id="portfolio-intro">
 
-                <h2 className="portfolio__keyword">Final Year Project | Software Development | Mobile App | AR App | Unity</h2>
+                <h2>Final Year Project | Software Development | Mobile App | AR App | Unity</h2>
                 <h3>My final year project is to develop a mobile AR application with collaborative features designed for interior design. The application is made using Unity Engine, with other technologies like ARFoundation, Unity Photon Pun 2, Firebase.</h3>
 
                 <div className="portfolio__link">
@@ -69,7 +54,7 @@ const Idar = () => {
             <img src="../img/idar_intro_img.png" alt="idar intropage"></img>
 
 
-            <section>
+            <section className='content'>
                 <h2 className="content-title">Overview</h2>
 
                 <p>Interior Design AR Room allow designer and client to find design direction. This app provide several choices of house model, furnitures, paints and tiles. Designer can choose any model based on their needs, and create an online room, which can be join by their client. </p>
@@ -96,7 +81,7 @@ const Idar = () => {
             </section>
 
 
-            <section>
+            <section className='content'>
                 <h2 className="content-title">Technologies</h2>
 
                 <div className="portfolio__content">
@@ -148,30 +133,21 @@ const Idar = () => {
                 </div>
             </section>
 
+            <section id="demo-video" className='content'>
+                <h2 className="content-title">Demo Videos</h2>
 
-            <section className="portfolio-content" id="demo-video">
-                <h2 className="content-title">Demo Video (Formal)</h2>
+                <Iframe className='iframe' width="1080" height="720" url="https://www.youtube.com/embed/oQ9NiFt2OjE"></Iframe>
 
-                <div className="content__item">
-                    {/* <iframe className="youtube-video" width="1080" height="720" src="https://youtube.com/embed/vx2f6x3AqUY"></iframe> */}
-                </div>
+                <Iframe className='iframe' width="1080" height="720" url="https://www.youtube.com/embed/NsJiW_9fYVM"></Iframe>
 
-            </section>
-
-
-            <section className="portfolio-content">
-                <h2 className="content-title">Demo Videos (Informal)</h2>
-
-                <div className="content__item">
-                    {/* <iframe className="youtube-video" width="1080" height="720" src="https://www.youtube.com/embed/oQ9NiFt2OjE"></iframe>
-
-                    <iframe className="youtube-video" width="1080" height="720" src="https://www.youtube.com/embed/NsJiW_9fYVM"></iframe>
-
-                    <iframe className="youtube-video" width="1080" height="720" src="https://www.youtube.com/embed/NgafZ4isUfo"></iframe> */}
-                </div>
+                <Iframe className='iframe' width="1080" height="720" url="https://www.youtube.com/embed/NgafZ4isUfo"></Iframe>
 
             </section>
 
+            <div className='footer'>
+                <ContactMe />
+            </div>
+            
 
         </div>
     )

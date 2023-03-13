@@ -9,14 +9,14 @@ const PersonalProjects = () => {
     return (
         <div className='projects' id="personal">
             <h1 className='title'>Personal Projects</h1>
-            <p>My software development project in UKM.</p>
+            <p>My personal software development project for practice purposes.</p>
             <div ref={portfolioRef} className={`portfolio ${refIsVisible ? 'fadeIn' : ''}`}>
                 <PortfolioItem
-                    link='portfolios/idar.html'
-                    image_path="./img/FYP_IDAR.png"
-                    date='Sep 2021 - July 2022'
-                    title='FYP - Interior Design AR Room'
-                    description='Develop a mobile AR app with collaborative feature for interior design. This is my final year project and the app is made using by Unity Engine.'
+                    link='parkperak'
+                    image_path="./img/parkperakthumbnail.png"
+                    date='Jan 2023 - Present'
+                    title='Park@Perak Redesign'
+                    description='Redesign Park@Perak App for practice purposes.'
                 />
             </div>
         </div>

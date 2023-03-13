@@ -10,8 +10,9 @@ const DesignProject = () => {
             <h1 className='title'>Graphic Design Projects</h1>
             <p>Graphic design I did for University Club and small business.</p>
             <div ref={portfolioRef} className={`portfolio ${refIsVisible ? 'fadeIn' : ''}`}>
+
                 <PortfolioItem
-                    link='portfolios/tionghua.html'
+                    link='/tionghua'
                     image_path="img/tiong_hua_kpz_thumbnail.png"
                     date='Sep 2019 - May 2021'
                     title='Cultural Night Event - Tiong Hua KPZ Club'
@@ -19,7 +20,7 @@ const DesignProject = () => {
                 />
 
                 <PortfolioItem
-                    link='portfolios/duoagency.html'
+                    link='/duo'
                     image_path="img/duoagency_thumbnail.png"
                     date='Dec 2021'
                     title='Duo Agency'
