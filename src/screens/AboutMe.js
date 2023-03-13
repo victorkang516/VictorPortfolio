@@ -27,7 +27,7 @@ const AboutMe = () => {
     return (
         <section className={`about-me ${aboutMeIsVisible ? 'fadeIn' : ''}`} ref={aboutMeRef} id='about-me'>
             <div className='title'>
-                <h2>SOFTWARE ENGINNER</h2>
+                <h2>SOFTWARE ENGINEER</h2>
                 <h1>VICTOR KANG</h1>
             </div>
             <div className={`content`}>
