@@ -22,12 +22,13 @@ const Idar = () => {
 
     return (
         <div className='idar'>
-            <img src="./background.png" className="bg-img" ref={bgRef}></img>
+
+            <h1 className="portfolio__title">Interior Design AR Room</h1>
 
             <section className="portfolio-intro" id="portfolio-intro">
-                <h1 className="portfolio__title">Interior Design AR Room</h1>
-                <h3 className="portfolio__keyword">Final Year Project | Software Development | Mobile App | AR App | Unity</h3>
-                <p>My final year project is to develop a mobile AR application with collaborative features designed for interior design. The application is made using Unity Engine, with other technologies like ARFoundation, Unity Photon Pun 2, Firebase.</p>
+
+                <h2 className="portfolio__keyword">Final Year Project | Software Development | Mobile App | AR App | Unity</h2>
+                <h3>My final year project is to develop a mobile AR application with collaborative features designed for interior design. The application is made using Unity Engine, with other technologies like ARFoundation, Unity Photon Pun 2, Firebase.</h3>
 
                 <div className="portfolio__link">
                     <a className="portfollio__button" href="https://github.com/victorkang516/Interior-Design-ARRoom">
@@ -36,39 +37,36 @@ const Idar = () => {
                     </a>
 
                     <a className="portfollio__button" href="#demo-video">
-                        <i className="fa-brands fa-github"></i>
                         Watch Demo Video
                     </a>
                 </div>
 
-
-                <img src="../img/idar_intro_img.png" alt="idar intropage"></img>
-
-
-                <div className="portfolio-detail">
-
-                    <div className="portfolio-detail__item">
-                        <h3>Date</h3>
-                        <div className="underline"></div>
-                        <p>Sep 2021 - Present</p>
-                    </div>
-
-                    <div className="portfolio-detail__item">
-                        <h3>Role</h3>
-                        <div className="underline"></div>
-                        <p>Software Engineer Student</p>
-                    </div>
-
-                    <div className="portfolio-detail__item">
-                        <h3>Course Name</h3>
-                        <div className="underline"></div>
-                        <p>Final Year Project</p>
-                    </div>
-
-                </div>
-
             </section>
 
+            <div className="portfolio-detail">
+
+                <div className="portfolio-detail__item">
+                    <h3>Date</h3>
+                    <div className="underline"></div>
+                    <p>Sep 2021 - Present</p>
+                </div>
+
+                <div className="portfolio-detail__item">
+                    <h3>Role</h3>
+                    <div className="underline"></div>
+                    <p>Software Engineer Student</p>
+                </div>
+
+                <div className="portfolio-detail__item">
+                    <h3>Course Name</h3>
+                    <div className="underline"></div>
+                    <p>Final Year Project</p>
+                </div>
+
+            </div>
+
+
+            <img src="../img/idar_intro_img.png" alt="idar intropage"></img>
 
 
             <section>
@@ -174,7 +172,7 @@ const Idar = () => {
 
             </section>
 
-            
+
         </div>
     )
 }

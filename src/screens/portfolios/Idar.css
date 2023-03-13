@@ -1,12 +1,11 @@
 /* Portfolio intro */
 .idar {
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    padding: 100px;
 }
 
 .bg-img {
@@ -20,6 +19,14 @@
     max-height: auto;
 }
 
+.portfolio-intro {
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
+    margin: 0 auto;
+    border-radius: 16px;
+}
+
 .portfolio__link {
     display: flex;
     justify-content: start;
@@ -28,21 +35,28 @@
 
 .portfollio__button {
     text-decoration: none;
-    background-color: var(--clr-accent);
-    color: var(--clr-dark);
+    background-color: rgb(0, 108, 170);
+    color: white;
     padding: 1em 1em;
     border-radius: 10px;
 }
 
 
 .portfolio__title {
+    font-family: 'Righteous', cursive;
     width: 50%;
-    margin-bottom: 0.5em;
-    color: var(--clr-accent);
+    margin-bottom: 1em;
+    font-size: 3.5em;
 }
 
 .portfolio__keyword {
-    color: var(--clr-grey);
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 1em;
+}
+
+.portfolio-intro h3 {
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 1.5em;
 }
 
 .portfolio__subtitle {
@@ -54,6 +68,7 @@
     margin-top: 2em;
     justify-content: center;
     text-align: center;
+    margin-bottom: 2em;
 }
 
 .portfolio-detail__item {
@@ -71,8 +86,26 @@
 }
 
 .content-title {
+    font-family: 'Righteous', cursive;
     margin-bottom: 1em;
+    color: white;
+    font-size: 2.5em;
     text-align: center;
+}
+
+.idar section p {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 1em;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.idar section img {
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .content__paragraph {
