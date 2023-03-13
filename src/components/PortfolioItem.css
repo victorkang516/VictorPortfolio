@@ -1,0 +1,26 @@
+.portfolio__item {
+    margin: 1em 1em;
+}
+
+.portfolio__item--title h3 {
+    margin-bottom: 12px;
+}
+
+.portfolio__item--title h3:hover {
+    color: rgb(0, 182, 173);
+}
+
+.portfolio__item--title:link,
+.portfolio__item--title:visited {
+    text-decoration: none;
+    color: var(--clr-dark);
+}
+
+.portfolio__img {
+    margin-bottom: 16px;
+}
+
+.portfolio__img:hover {
+    transform: translateY(-3%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+}

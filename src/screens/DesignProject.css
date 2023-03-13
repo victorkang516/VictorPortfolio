@@ -1,0 +1,11 @@
+.design-projects {
+    position: relative;
+    padding: 100px;
+    color: white;
+}
+
+.design-projects h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
