@@ -136,11 +136,7 @@ const Idar = () => {
             <section id="demo-video" className='content'>
                 <h2 className="content-title">Demo Videos</h2>
 
-                <Iframe className='iframe' width="1080" height="720" url="https://www.youtube.com/embed/oQ9NiFt2OjE"></Iframe>
-
-                <Iframe className='iframe' width="1080" height="720" url="https://www.youtube.com/embed/NsJiW_9fYVM"></Iframe>
-
-                <Iframe className='iframe' width="1080" height="720" url="https://www.youtube.com/embed/NgafZ4isUfo"></Iframe>
+                <Iframe className='iframe' width="1080" height="720" url="https://www.youtube.com/embed/VBUnJYVM1rM"></Iframe>
 
             </section>
 
