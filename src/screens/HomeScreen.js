@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import AboutMe from "./AboutMe";
+import HeroSection from "./hero-section/HeroSection";
 import AcademicProject from "./AcademicProjects";
 import ContactMe from "./ContactMe";
 import DesignProject from "./DesignProjects";
@@ -36,7 +36,7 @@ const HomeScreen = () => {
 
       <Header />
 
-      <AboutMe />
+      <HeroSection />
 
       <EcommerceGame />
 

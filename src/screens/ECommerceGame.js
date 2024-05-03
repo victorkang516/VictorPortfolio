@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import InitialPage from "./e-commerce-game/initial/InitialPage";
 import MarketPlacePage from "./e-commerce-game/market-place/MarketPlacePage";
+import SaleResultPage from "./e-commerce-game/sale-result/SaleResultPage";
 
 const productList = [
   {
@@ -150,10 +151,12 @@ const EcommerceGame = () => {
     }, 5000);
   };
 
-  const endSale = () => {};
+  const endSale = () => {
+    changeGameState("sale-result");
+  };
 
   return (
-    <div className="w-[90vw] m-auto bg-white h-[90vh] rounded-lg">
+    <div className="">
       {currentGameState === "initial" && (
         <InitialPage changeGameState={changeGameState} />
       )}
@@ -163,8 +166,11 @@ const EcommerceGame = () => {
           productChoices={productChoices}
           marketItems={marketItems}
           startSale={startSale}
+          changeGameState={changeGameState}
         />
       )}
+
+      {currentGameState === "sale-result" && <SaleResultPage />}
     </div>
   );
 };

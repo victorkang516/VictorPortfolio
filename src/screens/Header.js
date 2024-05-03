@@ -15,9 +15,6 @@ const Header = () => {
           <a href="#academic">Academic</a>
         </li>
         <li>
-          <a href="#design">Design</a>
-        </li>
-        <li>
           <a href="#contact-me">Contact Me</a>
         </li>
       </ul>
