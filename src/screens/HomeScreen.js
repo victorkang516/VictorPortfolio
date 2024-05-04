@@ -3,9 +3,9 @@ import HeroSection from "./hero-section/HeroSection";
 import AcademicProject from "./AcademicProjects";
 import ContactMe from "./ContactMe";
 import DesignProject from "./DesignProjects";
-import Header from "./Header";
+import Header from "./header/Header";
 import "./HomeScreen.css";
-import EcommerceGame from "./ECommerceGame";
+import EcommerceGame from "./e-commerce-game/ECommerceGame";
 
 const HomeScreen = () => {
   const bgRef = useRef(null);
