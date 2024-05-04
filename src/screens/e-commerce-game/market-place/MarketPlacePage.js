@@ -20,7 +20,7 @@ const MarketPlacePage = (props) => {
   };
 
   return (
-    <div className="w-[90vw] m-auto bg-white h-[90vh] rounded-lg">
+    <div className="w-[80vw] m-auto bg-white h-[90vh] rounded-lg">
       <div className="flex flex-col">
         <div className="flex flex-row w-full h-full ">
           {/* Market place */}

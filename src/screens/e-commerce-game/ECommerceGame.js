@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import InitialPage from "./e-commerce-game/initial/InitialPage";
-import MarketPlacePage from "./e-commerce-game/market-place/MarketPlacePage";
-import SaleResultPage from "./e-commerce-game/sale-result/SaleResultPage";
+import InitialPage from "./initial/InitialPage";
+import MarketPlacePage from "./market-place/MarketPlacePage";
+import SaleResultPage from "./sale-result/SaleResultPage";
 
 const productList = [
   {
