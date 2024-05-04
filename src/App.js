@@ -1,5 +1,4 @@
 import './App.css';
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeScreen from './screens/HomeScreen';
 import { ParallaxProvider } from 'react-scroll-parallax';
