@@ -1,6 +1,6 @@
 import React from 'react'
 import './Idar.css';
-import ContactMe from '../ContactMe';
+import ContactMe from '../../features/contact-me/ContactMe'
 
 function UwuShoppingSite() {
     return (

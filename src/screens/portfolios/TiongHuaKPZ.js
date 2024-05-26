@@ -1,5 +1,5 @@
 import React from 'react'
-import ContactMe from '../ContactMe'
+import ContactMe from '../../features/contact-me/ContactMe'
 
 const TiongHuaKPZ = () => {
     return (

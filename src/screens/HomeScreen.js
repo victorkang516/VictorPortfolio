@@ -1,10 +1,9 @@
 import React, { useEffect, useRef } from "react";
-import HeroSection from "./hero-section/HeroSection";
-import AcademicProject from "./AcademicProjects";
-import ContactMe from "./ContactMe";
-import DesignProject from "./DesignProjects";
-import Header from "./header/Header";
-import "./HomeScreen.css";
+import HeroSection from "../features/hero-section/HeroSection";
+import AcademicProject from "../features/academic-projects/AcademicProjects";
+import ContactMe from "../features/contact-me/ContactMe";
+import DesignProject from "../features/design-projects/DesignProjects";
+import Header from "../features/header/Header";
 import EcommerceGame from "./e-commerce-game/ECommerceGame";
 
 const HomeScreen = () => {
@@ -27,24 +26,24 @@ const HomeScreen = () => {
   }, []);
 
   return (
-    <div>
-      <img
+    <div className="bg-black">
+      {/* <img
         src="./background4.png"
         className="-z-10 absolute top-0 left-0 w-full bg-cover select-none"
         ref={bgRef}
-      ></img>
+      ></img> */}
 
       <Header />
 
       <HeroSection />
 
-      <EcommerceGame />
-
-      <ContactMe />
+      {/* <EcommerceGame /> */}
 
       <AcademicProject />
 
       <DesignProject />
+
+      <ContactMe />
     </div>
   );
 };

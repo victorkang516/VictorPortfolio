@@ -1,22 +1,23 @@
 import React from "react";
-import './PortfolioItem.css'
 import { Link } from "react-router-dom";
 
 const PortfolioItem = (props) => {
-    return (
-        <div class="portfolio__item">
-          <Link to={props.link}>
-            <img src={props.image_path} alt="" class="portfolio__img"></img>
-          </Link>
-          <p class="portfolio__date">{props.date}</p>
-          <Link href={props.link} class="portfolio__item--title">
-            <h3>{props.title}</h3>
-          </Link>
-          <p>{props.description}</p>
-
-          <div class="line"></div>
+  return (
+    <Link to={props.link}>
+      <div className="bg-white p-4 rounded-lg w-full h-full group flex flex-col justify-start items-start overflow-hidden hover:scale-105 transition-transform shadow-md hover:shadow-md hover:shadow-cyan-300 duration-400">
+        <div className="h-auto w-auto">
+          <img
+            src={props.image_path}
+            alt="project"
+            className="object-cover"
+          ></img>
         </div>
-    )
-}
+        <p className="text-gray-600 font-normal text-xs mt-4">{props.date}</p>
+        <p className="text-black font-bold text-xl my-4">{props.title}</p>
+        <p className="text-black">{props.description}</p>
+      </div>
+    </Link>
+  );
+};
 
-export default PortfolioItem
+export default PortfolioItem;

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './Idar.css';
 import Iframe from 'react-iframe'
-import ContactMe from '../ContactMe';
+import ContactMe from '../../features/contact-me/ContactMe'
 
 const Idar = () => {
 

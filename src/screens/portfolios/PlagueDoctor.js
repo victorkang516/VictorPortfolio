@@ -1,6 +1,6 @@
 import React from 'react'
 import Iframe from 'react-iframe'
-import ContactMe from '../ContactMe';
+import ContactMe from '../../features/contact-me/ContactMe'
 
 const PlagueDoctor = () => {
     return (
