@@ -1,11 +1,11 @@
 import React from "react";
-import NavItem from "./NavItem";
+import NavItem from "../../components/header/NavItem";
 
 const Header = () => {
   return (
     <div className="flex flex-row justify-between items-center text-white p-4 w-[80vw] mx-auto">
       <a href="" className="text-[40px] font-freeman">
-        VK
+        VK Portfolio
       </a>
       <div className="flex flex-row justify-around gap-8 h-fit">
         <NavItem href="#about-me">About Me</NavItem>
