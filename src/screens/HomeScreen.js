@@ -5,6 +5,7 @@ import ContactMe from "../features/contact-me/ContactMe";
 import DesignProject from "../features/design-projects/DesignProjects";
 import Header from "../features/header/Header";
 import EcommerceGame from "./e-commerce-game/ECommerceGame";
+import PersonalProject from "../features/personal-projects/PersonalProjects";
 
 const HomeScreen = () => {
   const bgRef = useRef(null);
@@ -38,6 +39,8 @@ const HomeScreen = () => {
       <HeroSection />
 
       {/* <EcommerceGame /> */}
+
+      <PersonalProject />
 
       <AcademicProject />
 

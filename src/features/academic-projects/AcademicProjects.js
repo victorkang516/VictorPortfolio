@@ -6,7 +6,7 @@ const AcademicProject = () => {
   const { ref: portfolioRef, inView: refIsVisible } = useInView();
 
   return (
-    <div className="bg-gray-200 text-black" id="projects">
+    <div className="bg-black text-white" id="projects">
       <div className="px-10 md:w-5/6 mx-auto py-20">
         <h1 className="font-freeman font-bold text-[4vw] mb-4">
           Academic Projects

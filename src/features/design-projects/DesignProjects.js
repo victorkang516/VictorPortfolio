@@ -5,12 +5,12 @@ import { useInView } from "react-intersection-observer";
 const DesignProject = () => {
   const { ref: portfolioRef, inView: refIsVisible } = useInView();
   return (
-    <div className="bg-black">
+    <div className="bg-gray-200 text-black">
       <div className="px-10 md:w-5/6 mx-auto py-20">
-        <h1 className="font-freeman text-white font-bold text-[4vw] mb-4">
+        <h1 className="font-freeman font-bold text-[4vw] mb-4">
           Graphic Design Projects
         </h1>
-        <div className="text-white mb-4">
+        <div className="mb-4">
           My freelance graphic design jobs with clients.
         </div>
         <div
