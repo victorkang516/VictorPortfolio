@@ -1,9 +1,10 @@
 const NavItem = (props) => {
-  const { children, href } = props;
+  const { children, href, onClick } = props;
   return (
     <a
       href={href}
-      className="flex justify-center items-center hover:bg-white hover:text-black px-4 py-2 rounded-full"
+      className="flex justify-center items-center font-medium hover:bg-white hover:text-black px-4 py-2 rounded-full"
+      onClick={onClick}
     >
       {children}
     </a>

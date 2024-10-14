@@ -1,16 +1,15 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import PortfolioItem from "../../components/PortfolioItem";
+import SectionHeader from "../../components/section/SectionHeader";
 
 const AcademicProject = () => {
   const { ref: portfolioRef, inView: refIsVisible } = useInView();
 
   return (
-    <div className="bg-black text-white" id="projects">
-      <div className="px-10 md:w-5/6 mx-auto py-20">
-        <h1 className="font-freeman font-bold text-[4vw] mb-4">
-          Academic Projects
-        </h1>
+    <div className="bg-black text-white" id="academic">
+      <div className="px-10 mx-auto max-w-[1280px] py-20">
+        <SectionHeader>Academic Projects</SectionHeader>
         <div
           ref={portfolioRef}
           className={`grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 ${

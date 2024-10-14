@@ -1,50 +1,76 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import animeboy from "./anime-boy1.png";
+import bg from "../../assets/bg.gif";
+
+const RoleItem = ({ children }) => {
+  return (
+    <div className="cursor-default text-white hover:text-black border border-white hover:bg-white transition-all font-semibold lg:px-4 lg:py-2 px-2 py-1 rounded-sm text-sm max-w-fit ">
+      {children}
+    </div>
+  );
+};
 
 const HeroSection = () => {
   const { ref: aboutMeRef, inView: aboutMeIsVisible } = useInView();
 
+  const bgRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPos = window.scrollY;
+      const bgElement = bgRef.current;
+      if (bgElement) {
+        bgElement.style.top = `${scrollPos * 0.7}px`;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section
-      className={`flex lg:flex-row flex-col mx-auto mt-20 mb-20 lg:w-[80vw] ${
-        aboutMeIsVisible ? "fadeIn" : ""
-      }`}
+      className={`flex lg:flex-row flex-col mx-auto pt-20 mb-20 px-8 max-w-[1280px]`}
       ref={aboutMeRef}
       id="about-me"
     >
-      <div className="mx-8 lg:mx-0 relative">
-        <div className="font-freeman font-bold text-white text-[18vw] lg:text-[12vw] -mb-5 lg:-mb-10">
+      <img
+        src={bg}
+        alt="bg gif"
+        className="-z-20 absolute top-0 left-0 h-full w-full object-cover select-none"
+        ref={bgRef}
+      ></img>
+
+      <div className="flex-[1] flex flex-row lg:flex-col gap-4 hover:translate-x-16 transition-all cursor-default">
+        <div className="font-freeman font-bold text-white text-[64px] lg:text-[156px] -mb-5 lg:-mb-14">
           VICTOR
         </div>
-        <div className="flex lg:flex-row flex-col text-black lg:text-[1vw] text-[2vw] font-semibold gap-1 -mb-5 lg:-mb-10">
-          <div className="bg-white lg:px-4 lg:py-2 px-2 py-0 rounded-sm ">
-            SOFTWARE ENGINEER
-          </div>
-          <div className="bg-white lg:px-4 lg:py-2 px-2 py-0 rounded-sm ">
-            UIUX DESIGNER
-          </div>
-          <div className="bg-white lg:px-4 lg:py-2 px-2 py-0 rounded-sm ">
-            FRONTEND DEV
-          </div>
-        </div>
-        <div className="font-freeman font-bold text-white text-[18vw] lg:text-[12vw] ">
+        <div className="font-freeman font-bold text-white text-[64px] lg:text-[156px] ">
           KANG
         </div>
-        <img
-          src={animeboy}
-          className="absolute lg:-top-12 top-0 lg:-right-[22vw] -right-[14vw] lg:w-[80em] w-[60vw]"
-        />
       </div>
-      <div className="flex flex-col justify-center items-start mx-8 lg:ml-[16vw] gap-8">
-        <div className="typewriter text-white text-[2.5vw] lg:text-[1.2vw] w-[200px] h-[9vh] lg:h-[12vh]">
+      <div
+        className={`flex-[1] flex flex-col justify-center items-start gap-8 ${
+          aboutMeIsVisible ? "fadeIn" : ""
+        }`}
+      >
+        <div className="flex flex-row gap-1">
+          <RoleItem>SOFTWARE ENGINEER</RoleItem>
+          <RoleItem>UIUX DESIGNER</RoleItem>
+          <RoleItem>FRONTEND DEV</RoleItem>
+        </div>
+        <div className="typewriter text-white text-md lg:text-lg w-[200px] h-[80px]">
           Welcome to my Portfolio! Here’s where I showcase my UIUX, Frontend
           Development and Graphic Design skills!
         </div>
-        <div className="bg-blue-400 text-white font-bold px-4 py-2 rounded-md cursor-pointer z-20">
+        <div className="bg-teal-700 hover:bg-teal-500 text-white font-semibold px-8 py-2 rounded-full cursor-pointer z-20">
           <a
-            href="./resume/Victor Resume May 2024.pdf"
-            className={`${aboutMeIsVisible ? "fadeIn-late" : ""} `}
+            href="./resume/Victor Resume 2024 October.docx.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             View Resume
           </a>
