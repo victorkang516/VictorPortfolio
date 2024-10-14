@@ -66,15 +66,15 @@ const HeroSection = () => {
           Welcome to my Portfolio! Here’s where I showcase my UIUX, Frontend
           Development and Graphic Design skills!
         </div>
-        <div className="bg-teal-700 hover:bg-teal-500 text-white font-semibold px-8 py-2 rounded-full cursor-pointer z-20">
-          <a
-            href="./resume/Victor Resume 2024 October.docx.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Resume
-          </a>
-        </div>
+
+        <a
+          href="./resume/Victor Resume 2024 October.docx.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-teal-700 hover:bg-teal-500 text-white font-semibold px-8 py-2 rounded-full cursor-pointer z-20"
+        >
+          View Resume 2024 OCT
+        </a>
       </div>
     </section>
   );
