@@ -1,0 +1,47 @@
+name: Claude PR Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  code-review:
+    runs-on: ubuntu-latest
+    name: AI Code Review with Claude
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Claude Code Review
+        uses: anthropics/claude-code-action@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          model: claude-sonnet-4-5
+          system_prompt: |
+            You are reviewing a Next.js 16 portfolio website built with React 19, TypeScript, and Tailwind CSS v4.
+
+            Focus your review on:
+            - Code quality and best practices for Next.js App Router
+            - TypeScript type safety
+            - React 19 patterns and hooks usage
+            - Tailwind CSS class organization
+            - Component structure and reusability
+            - Performance implications
+            - Accessibility concerns
+            - Security vulnerabilities
+
+            This project uses:
+            - Motion (Framer Motion) for animations
+            - shadcn/ui components
+            - pnpm as package manager
+
+            Provide constructive feedback with specific suggestions for improvement.
