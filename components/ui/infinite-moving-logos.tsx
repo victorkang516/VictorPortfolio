@@ -90,6 +90,7 @@ export const InfiniteMovingLogos = ({
           start && "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]",
         )}
+        suppressHydrationWarning
       >
         {items.map((item, idx) => {
           const Icon = item.icon;

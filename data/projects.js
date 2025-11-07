@@ -1,6 +1,27 @@
 export const projectsData = [
   // Personal Projects
   {
+    id: "boberhr",
+    title: "BoberHR",
+    date: "2025 October",
+    description:
+      "A concept HR management SaaS platform that streamlines HR operations. Features mobile-friendly interface for managing leave requests, employee directory, and team schedules - built to help organizations focus on what matters.",
+    image: "/img/boberhr/boberhr-thumbnail.jpg",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "UI/UX Design"],
+    links: [
+      {
+        label: "Visit Website",
+        url: "https://boberhr.vercel.app/",
+        type: "primary",
+      },
+      {
+        label: "View on GitHub",
+        url: "https://github.com/victorkang516/boberhr-marketing",
+        type: "secondary",
+      },
+    ],
+  },
+  {
     id: "caritutor",
     title: "CariTutor",
     date: "2024 June - 2024 Sep",
@@ -23,6 +44,23 @@ export const projectsData = [
         label: "UX Case Study",
         url: "https://drive.google.com/file/d/1TLTwluqhCCmL7zOolpbbXppkAG15oHMa/view?usp=sharing",
         type: "secondary",
+      },
+    ],
+  },
+  {
+    id: "idar",
+    title: "FYP - Interior Design AR Room App",
+    date: "Sep 2021 - July 2022",
+    description:
+      "Develop a mobile AR app with collaborative feature for interior design. This is my final year project and the app is made using by Unity Engine.",
+    image: "/img/idar/fyp-idar-thumbnail.jpg",
+    techStack: ["Unity", "C#", "AR", "Mobile Development"],
+    links: [
+      {
+        label: "Read Case Study",
+        url: "/projects/idar",
+        type: "primary",
+        internal: true,
       },
     ],
   },
@@ -50,23 +88,7 @@ export const projectsData = [
   },
 
   // Academic Projects
-  {
-    id: "idar",
-    title: "FYP - Interior Design AR Room App",
-    date: "Sep 2021 - July 2022",
-    description:
-      "Develop a mobile AR app with collaborative feature for interior design. This is my final year project and the app is made using by Unity Engine.",
-    image: "/img/idar/fyp-idar-thumbnail.jpg",
-    techStack: ["Unity", "C#", "AR", "Mobile Development"],
-    links: [
-      {
-        label: "Read Case Study",
-        url: "/projects/idar",
-        type: "primary",
-        internal: true,
-      },
-    ],
-  },
+
   {
     id: "plague-doctor",
     title: "Plague Doctor Game",

@@ -144,7 +144,7 @@ export default function HeroSection() {
           <Image
             src="/img/home/potrait.jpg"
             alt="Victor Kang Portrait"
-            className="object-contain w-[280px] md:w-[350px] lg:w-[400px] h-auto"
+            className="object-contain"
             width={400}
             height={300}
             priority
